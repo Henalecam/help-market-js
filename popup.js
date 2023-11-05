@@ -1,7 +1,7 @@
-async function getCurrentTab() {
-  console.log('teste');
-  let queryOptions = { active: true, lastFocusedWindow: true };
-  // `tab` will either be a `tabs.Tab` instance or `undefined`.
-  let [tab] = await chrome.tabs.query(queryOptions);
-  return tab;
+function getCurrentTabUrl() {
+  console.log('teste')
 }
+
+document.addEventListener("console", function () {
+  console.log('teste')
+})
