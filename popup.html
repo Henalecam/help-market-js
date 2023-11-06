@@ -3,13 +3,32 @@
 	<head>
 		<script  src="popup.js"></script>
 		<style>
+			body {
+				min-width: 300px;
+				overflow-x: hidden;
+			}
 			button {
-				height: 30px;
-				width: 30px;
 				outline: none;
 			}
 		</style></head>
 	<body>
-		<button id="console"></button>
+		<h1>Cart List</h1>
+		<input type="button" id="addCart" value="Create a New Cart">
+		<div id="cartList">
+			<h2>Shop name</h2>
+			<table id="cartTable">
+				<tr>
+					<th>Item</th>
+					<th>Price</th>
+					<th>Quantity</th>
+					<th>Subtotal</th>
+				</tr>
+			</table>
+			<h3>Shop Total Price: </h3>
+		</div>
+		<button id="clear">Clear</button>
+		<button id="checkout">Checkout</button>
+		<button id="close">Close</button>
+		
 	</body>
 </html>
