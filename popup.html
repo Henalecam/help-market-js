@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
+
 		<script  src="popup.js"></script>
-		<style>
-			body {
-				min-width: 300px;
-				overflow-x: hidden;
-			}
-			button {
-				outline: none;
-			}
-		</style></head>
+
+
+	</head>
+	<link rel="stylesheet" type="text/css" href="popup.css">
 	<body>
 		<h1>Cart List</h1>
-		<input type="button" id="addCart" value="Create a New Cart">
+		<button id="addCart">Add New Cart</button>
 		<div id="cartList">
 			<h2>Shop name</h2>
-			<table id="cartTable">
+			<table id="cartTable" aria-describedby="Cart name Table">
 				<tr>
 					<th>Item</th>
 					<th>Price</th>
 					<th>Quantity</th>
 					<th>Subtotal</th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>Item 1</td>
+					<td>Price 1</td>
+					<td>Quantity 1</td>
+					<td>Subtotal 1</td>
+					<td><button class="editButton"><i class="fa-solid fa-pencil"></i></button></td>
+					<td><button class="deleteButton"><i class="fa-solid fa-trash"></i></button></td>
 				</tr>
 			</table>
-			<h3>Shop Total Price: </h3>
+			<h4>Shop Total Price: </h4>
 		</div>
 		<button id="clear">Clear</button>
 		<button id="checkout">Checkout</button>
 		<button id="close">Close</button>
-		
+
 	</body>
 </html>
